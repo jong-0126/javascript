@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--출력물 예제
+       
+    <h2>Hello world</h2>
+    <h3 id = 'result'></h3>
+    -->
+    <script>
+
+        //제어문 종합 실습 예제
+        let level = prompt("Enter your level(A/B/C)");
+
+        switch(level) {
+        case 'A' :
+            console.log('VIP Level');break;
+        case 'B' :
+            console.log('Basic Level');break;
+        default :
+            console.log('No Level');break;
+        }       
+
+        
+        for(let dan = 2; dan <= 9; dan++){
+            console.log('## ' + dan + 'times table ##');
+            for(let i = 1; i <= 9; i++){
+                console.log(dan + " * " + i + " = " + dan*i );
+            }
+        }
+
+        /*
+        // 출력물 예제     
+        var name = 'HongGilDong';
+
+        document.write(name);
+        document.getElementById('result').innerHTML = name;
+        alert(name);
+        console.log(name);
+
+        // HTML의 <h3> 태그는 id=result 로 선언되고 내용은 비어 있음.
+        // document.write() 를 이용하면 원래 HTML 내용을 지우고 출력.
+        // document.getElementById() 는 id가 result 인 태그를 찾아 이름을 출력
+        */
+
+        /*
+        // 호이스팅
+        console.log('log1: ' + txt);
+
+        if(true){
+            var txt = 'text';
+            console.log('log2: ' + txt);
+        }
+
+        console.log('log3' + txt);
+
+        // 첫줄의 console.log(txt) 에서 txt 변수가 선언되지 않은 상태인데 에러 발생 안함.
+        // if 블럭 안에서 txt 변수의 선언이 이루어지고 호이스트되어 가능.
+        // 실행시 첫번째 콘솔 출력은 에러가 아닌 undenfined.
+
+        */  
+        
+        /*
+        //다양한 방법으로 변수 선언, 문자열 변수 사용
+        var txt1 = 'text1';
+        console.log(txt1);
+
+        if(true) {
+            var txt2 = 'txt2';
+            console.log(txt2);
+        }
+
+        console.log(txt1);
+        console.log(txt2);
+
+        let text1_1 = 'text1_1';
+        const txt3 = 'hello';
+        console.log(text1_1);
+
+        if(true) {
+            let text2_2 = 'text2_2';
+            console.log(text2_2);
+        }
+
+        //console.log(txt2_2);  //error 
+        //txt3 = 'world';   //error
+
+        console.log(text1_1);
+        console.log(txt3);
+
+        // 일반적인 언어에서는 if 블럭안에 쓰인 txt2는 블럭 밖에서 사용할 수 없으나 자바스크립트는 가능.
+        // let으로 선언된 txt2_2 는 블럭 밖에서 참조 불가능.
+        // const로 선언된 txt3는 값 변경 불가능.
+        // 실행결과는 콘솔로 출력(브라우저 f12 -> console 에서 확인)
+
+        */
+
+        /*
+        // 이름 물어보고 입력된 이름을 브라우저 화면에 출력
+        var name = prompt('Input your name!!');
+        document.write('Welcome ' + name);
+        */
+
+    </script>
+</body>
+</html>
